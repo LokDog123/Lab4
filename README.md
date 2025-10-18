@@ -1,19 +1,2 @@
 ﻿# Docker Web Application
-
-Проект веб-приложения в Docker контейнерах.
-
-## Состав
-- 🌐 Nginx web server
-- 🗄️ MySQL database
-- 🐳 Docker Compose
-
-## Запуск
-\\\ash
-docker-compose up -d
-\\\
-
-## Доступ
-- Веб-сайт: http://localhost:8080
-- База данных: localhost:3307
-
-## Толкач поит-223
+Проект веб-приложения с Nginx и MySQL.
