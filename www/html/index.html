@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker Web App</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Arial', sans-serif; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            max-width: 600px;
+            width: 90%;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .status {
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            border-left: 5px solid;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            border-left-color: #28a745;
+        }
+        .info {
+            background-color: #d1ecf1;
+            color: #0c5460;
+            border-left-color: #17a2b8;
+        }
+        .services {
+            margin: 20px 0;
+        }
+        .service-item {
+            padding: 10px;
+            margin: 5px 0;
+            background: #f8f9fa;
+            border-radius: 5px;
+            border-left: 3px solid #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Docker Web Application</h1>
+        
+        <div class="status success">
+            <strong>✅ SUCCESS:</strong> Nginx web server is running!
+        </div>
+        
+        <div class="status info">
+            <strong>📊 INFO:</strong> MySQL database is available
+        </div>
+
+        <div class="services">
+            <h3>Running Services:</h3>
+            <div class="service-item">🌐 Nginx Web Server (Port 80 → 8080)</div>
+            <div class="service-item">🗄️ MySQL Database (Port 3306 → 3307)</div>
+            <div class="service-item">🐳 Docker Containers</div>
+        </div>
+
+        <div class="status info">
+            <strong>MySQL Connection Details:</strong><br>
+            Host: localhost:3307<br>
+            Database: myapp<br>
+            User: myuser<br>
+            Password: mypassword
+        </div>
+    </div>
+</body>
+</html>
